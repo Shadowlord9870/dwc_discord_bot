@@ -4,6 +4,7 @@
   },
   "imports": {
     "discordeno": "https://deno.land/x/discordeno@18.0.1/mod.ts",
-    "sqlite": "https://deno.land/x/sqlite@v3.7.0/mod.ts"
+    "sqlite": "https://deno.land/x/sqlite@v3.7.0/mod.ts",
+    "asserts": "https://deno.land/std@0.175.0/testing/asserts.ts"
   }
 }
