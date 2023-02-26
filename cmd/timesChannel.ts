@@ -35,7 +35,7 @@ export const timesChannel = async (bot: Bot, db: DB) => {
 
         // 更新
         if (channel_ids.length) {
-          b.helpers.editChannel(channel_ids[0][0], { name })
+          b.helpers.editChannel(channel_ids[0][0], { name: `times_${name}` })
           b.helpers.sendInteractionResponse(interaction.id, interaction.token, {
             type: InteractionResponseTypes.ChannelMessageWithSource,
             data: {
@@ -49,7 +49,7 @@ export const timesChannel = async (bot: Bot, db: DB) => {
         const channelCreate = b.helpers.createChannel(
           interaction.guildId!,
           {
-            name,
+            name: `times_${name}`,
             type: ChannelTypes.GuildText
           }
         )
