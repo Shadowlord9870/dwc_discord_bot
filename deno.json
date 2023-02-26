@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env --allow-read --allow-write --allow-net --allow-ffi --unstable main.ts"
+  },
+  "imports": {
+    "discordeno": "https://deno.land/x/discordeno@18.0.1/mod.ts",
+    "sqlite": "https://deno.land/x/sqlite@v3.7.0/mod.ts"
+  }
+}
