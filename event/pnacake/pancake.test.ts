@@ -10,7 +10,7 @@ const trueMessages = [
   "パンけーき",
   "hotcake",
   "ぱんけき",
-  "けき"
+  "けき",
 ];
 trueMessages.forEach((trueMessage) => {
   Deno.test(`checkMessage("${trueMessage}")がtrueを返すこと`, () => {

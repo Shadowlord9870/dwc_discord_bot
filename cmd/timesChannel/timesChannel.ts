@@ -6,7 +6,7 @@ import {
   InteractionResponseTypes,
 } from "discordeno";
 import { DB } from "sqlite";
-import { GUILD_ID } from "../../secrets.ts"
+import { GUILD_ID } from "../../secrets.ts";
 
 export const timesChannel = async (bot: Bot, db: DB) => {
   const createTimesChannelCommand: CreateSlashApplicationCommand = {

@@ -15,7 +15,7 @@ await timesChannel(bot, db);
 
 // メッセージ作成時のイベント
 bot.events.messageCreate = (b, message) => {
-  pancake(b, message)
-}
+  pancake(b, message);
+};
 
 startBot(bot);
