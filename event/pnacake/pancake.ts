@@ -14,7 +14,6 @@ const pancakeUrls = [
 ];
 
 export const pancake = (b: Bot, message: Message) => {
-  console.log(message);
   if (message.isFromBot) return;
   if (checkMessage(message.content)) {
     b.helpers.sendMessage(message.channelId, {
