@@ -7,7 +7,7 @@ export const createMessage = (): string => {
   if (suffix === "！！" && Math.random() > 0.8) {
     suffix += "\nね！！！！！";
   }
-  return `しんみりしてきましたね${suffix}`;
+  return `しんみりしてきましたね${suffix || ""}`;
 };
 
 if (import.meta.main) {
